@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Yan </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mim"> <!-- Título Início -->
+            <h1>Sobre Mim</h1>
+            <p>Olá! Meu nome é Yan Gabriel Silva Costa. Sou webdesigner e atualmente estou cursando Análise e Desenvolvimentos de Sistemas pela Uninter. Gosto de jogos e criar música nas horas vagas.</p>
+        </section>
+
+        <section id="formacao"> <!-- Título Formação -->
+            <h1>Minha Formação</h1>
+            <h2>Educação</h2>
+            <ul>
+                <li>Cursando Análise e Desenvolvimentos de Sistemas - UNINTER</li>
+            </ul>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Inglês - Nível Intermediário</li>
+            </ul>
+        </section>
+
+        <section id="portfolio"> <!-- Título Projetos -->
+            <h1>Meu Portfólio</h1>
+            <p>Aqui estão alguns dos meus projetos:</p>
+            <ul>
+                <li><a href="https://github.com/YanGabrielSilvaCosta" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/fruttyrefrigerantes/" target="_blank">Trabalhos de Designer</a></li>
+            </ul>
+        </section>
+
+        <section id="contato"> <!-- Título Contatos -->
+            <h1>Entre em Contato</h1>
+            <p>Preencha o formulário abaixo para entrar em contato:</p>
+            <form> <!-- Formulários para entrar em contato -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yan Gabriel. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

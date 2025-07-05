@@ -1,0 +1,132 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    
+    background-image: url('fundo.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky; /* Fixo ao rolar */
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #666; /* Mudar cor quando passar o mouse */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+section {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h1 {
+    color: #333;
+}
+
+section ul {
+    list-style: inside;
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+section ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003c7a; /* Mudar cor quando passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #444;
+    color: #fff;
+    margin-top: 20px;
+}
